@@ -9,6 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <style>
+        .carousel-item div {
+            background-color: transparent !important;
+        }
+
+        
+
+       
+
+ 
+    </style>
 </head>
 
 <body>
@@ -73,10 +84,26 @@
     <div class="container ">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="card mb-4 product-detail" >
+                <div class="card mb-4 product-detail">
                     <img src="https://sokly.sgp1.digitaloceanspaces.com/Google/Google-Pixel-10-Pro/jade-1-1755853381A1MnS.png"
-                        class="card-img-top p-0" alt="Google Pixel 10 Pro">
+                        class="card-img-top p-0" id="productMainImage" alt="Google Pixel 10 Pro">
+                    <hr>
+                    <div class="ps-3 pb-3" style=" overflow:auto;display: flex;">
+                        <img src="https://sokly.sgp1.digitaloceanspaces.com/Google/Google-Pixel-10-Pro-XL/jade-2-1755854557pOEYy.png"
+                            class="img-product" onclick="changeImg(this.src)" alt="">
+                        <img src="https://sokly.sgp1.digitaloceanspaces.com/Google/Google-Pixel-10-Pro-XL/jade-3-1755854558mcLbr.png"
+                            class="img-product" onclick="changeImg(this.src)" alt="">
+                        <img src="https://sokly.sgp1.digitaloceanspaces.com/Google/Google-Pixel-10-Pro/obsidian-1-1755853386qY9EF.png"
+                            class="img-product" onclick="changeImg(this.src)" alt="">
+                        <img src="https://sokly.sgp1.digitaloceanspaces.com/Google/Google-Pixel-10-Pro/obsidian-2-1755853387tqzLl.png"
+                            class="img-product" onclick="changeImg(this.src)" alt="">
+                        <img src="https://sokly.sgp1.digitaloceanspaces.com/Google/Google-Pixel-10-Pro/obsidian-3-1755853387PpwUv.png"
+                            class="img-product" onclick="changeImg(this.src)" alt="">
+                        <img src="https://sokly.sgp1.digitaloceanspaces.com/Google/Google-Pixel-10-Pro-XL/porcelain-1-17558545623WeLl.png"
+                            class="img-product" onclick="changeImg(this.src)" alt="">
+                    </div>
                 </div>
+
             </div>
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -107,30 +134,153 @@
                     <div class="mb-4">
                         <h5 class="text-danger m-0 p-0 pb-2">Network</h5>
                         <hr class="m-0">
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Tochnology</span>	<span>GSM / HSPA / LTE / 5G</span></p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Tochnology</span> <span>GSM / HSPA / LTE
+                                / 5G</span></p>
                     </div>
 
                     <div class="mb-4">
                         <h5 class="text-danger m-0 p-0 pb-2">Launch</h5>
                         <hr class="m-0">
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Announced</span>	<span>2025, August 20</span></p>
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold " style="margin-right:90px;">Status</span>	<span>Coming soon. Exp. release 2025, August 28</span></p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Announced</span> <span>2025, August
+                                20</span></p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold " style="margin-right:90px;">Status</span>
+                            <span>Coming soon. Exp. release 2025, August 28</span>
+                        </p>
                     </div>
 
                     <div class="mb-4">
                         <h5 class="text-danger m-0 p-0 pb-2">Body</h5>
                         <hr class="m-0">
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Dimensions</span>	<span>152.8 x 72 x 8.5 mm (6.02 x 2.83 x 0.33 in)</span></p>
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold  " style="margin-right:86px;">Weight</span>	<span>207 g (7.30 oz)</span></p>
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold  "style="margin-right:100px;">Build</span>	<span>Glass front (Gorilla Glass Victus 2) </span></p>
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold  " style="margin-right:110px;">SIM</span>	<span>Nano-SIM + eSIM</span></p>
-                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Water Proof</span>	<span>IP68 dust tight and water resistant (up to 1.5m for 30 min)</span></p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Dimensions</span> <span>152.8 x 72 x 8.5
+                                mm (6.02 x 2.83 x 0.33 in)</span></p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold  " style="margin-right:86px;">Weight</span>
+                            <span>207 g (7.30 oz)</span>
+                        </p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold  " style="margin-right:100px;">Build</span>
+                            <span>Glass front (Gorilla Glass Victus 2) </span>
+                        </p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold  " style="margin-right:110px;">SIM</span>
+                            <span>Nano-SIM + eSIM</span>
+                        </p>
+                        <p class="p-0 m-0 pt-2"><span class="fw-semibold me-5 ">Water Proof</span> <span>IP68 dust tight
+                                and water resistant (up to 1.5m for 30 min)</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- end of product detail -->
+
+    <!-- start of related product -->
+    <div class="container d-none d-md-block d-lg-block">
+        <h2 class="fw-semibold mt-3">Related Product</h2>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="container my-3 mt-5">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Oppo/Oppo-Find-X9-Pro/silk-white-1-1763172322DI6gj.png"
+                                    class="card-img-top card-img-top-related p-0" alt="oppo-Find-X9-Pro">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Oppo Find X9 Pro</h6>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/SAMSUNG/Phone/Galaxy-S25-edge/titanium-silver-1-1749027405psJgo.png"
+                                    class="card-img-top card-img-top-related p-0" alt="Galaxy-S25-edge">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Galaxy S24 Edge</h6>
+
+                            </div>
+                            <div class="col-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Xiaomi/Xiaomi-15T-Pro/gold-17622487955XOpu.jpg"
+                                    class="card-img-top card-img-top-related p-0" alt="Xiaomi-15T-Pro">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Xiaomi 15T Pro</h6>
+                            </div>
+                            <div class="col-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Apple/iphone/iPhone-17-Pro-17-Pro-Max/iphone-17-pro-max-cosmic-orange-1-1757561807c7xkc.png"
+                                    class="card-img-top card-img-top-related p-0" alt="iPhone-17-Pro-17-Pro-Max">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">iPhone 17 PRO MAX</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="container my-3 mt-5">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Apple/iphone/iPhone-17-Pro-17-Pro-Max/iphone-17-pro-max-cosmic-orange-1-1757561807c7xkc.png"
+                                    class="card-img-top card-img-top-related p-0" alt="iPhone-17-Pro-17-Pro-Max">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">iPhone 17 PRO MAX</h6>
+                            </div>
+
+                            <div class="col-md-3 col-lg-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/SAMSUNG/Phone/Galaxy-S25-edge/titanium-silver-1-1749027405psJgo.png"
+                                    class="card-img-top card-img-top-related p-0" alt="Galaxy-S25-edge">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Galaxy S24 Edge</h6>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Oppo/Oppo-Find-X9-Pro/silk-white-1-1763172322DI6gj.png"
+                                    class="card-img-top card-img-top-related p-0" alt="oppo-Find-X9-Pro">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Oppo Find X9 Pro</h6>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Xiaomi/Xiaomi-15T-Pro/gold-17622487955XOpu.jpg"
+                                    class="card-img-top card-img-top-related p-0" alt="Xiaomi-15T-Pro">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Xiaomi 15T Pro</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container my-3 mt-5">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-4">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Xiaomi/Xiaomi-15T-Pro/gold-17622487955XOpu.jpg"
+                                    class="card-img-top card-img-top-related p-0" alt="Xiaomi-15T-Pro">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Xiaomi 15T Pro</h6>
+                            </div>
+                            <div class="col-md-3 col-lg-4">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Apple/iphone/iPhone-17-Pro-17-Pro-Max/iphone-17-pro-max-cosmic-orange-1-1757561807c7xkc.png"
+                                    class="card-img-top card-img-top-related p-0" alt="iPhone-17-Pro-17-Pro-Max">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">iPhone 17 PRO MAX</h6>
+                            </div>
+                            <div class="col-md-3 col-lg-4">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/Oppo/Oppo-Find-X9-Pro/silk-white-1-1763172322DI6gj.png"
+                                    class="card-img-top card-img-top-related p-0" alt="oppo-Find-X9-Pro">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Oppo Find X9 Pro</h6>
+
+                            </div>
+                            <div class="col-md-3 col-lg-4">
+                                <img src="https://sokly.sgp1.digitaloceanspaces.com/SAMSUNG/Phone/Galaxy-S25-edge/titanium-silver-1-1749027405psJgo.png"
+                                    class="card-img-top card-img-top-related p-0" alt="Galaxy-S25-edge">
+                                <h6 class="ms-lg-5 mt-lg-3   fw-semibold">Galaxy S24 Edge</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" style="width:45px;background-color: #f0eeee;" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" style="width:45px;background-color:  #f0eeee;" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- end of related product -->
 
     <p class="mb-5"></p>
 
@@ -192,6 +342,13 @@
     </div>
     <!-- end of footer -->
 
+    <script>
+        const img = document.getElementById('productMainImage');
+
+        function changeImg(src) {
+            img.src = src;
+        }
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
